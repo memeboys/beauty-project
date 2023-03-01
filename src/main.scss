@@ -1,0 +1,393 @@
+body { 
+    background-color: #EFEFEF;
+    margin: 0 auto;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #79C971ED;
+}
+
+button:active {
+    background-color: #44803D;
+}
+
+
+.header__service {
+    display: flex;
+    background-color: #F5F5F5;
+    justify-content: center;
+    color: #333333;
+    font-size: 14px;
+
+}
+
+.service {
+    display: flex;
+}
+
+.service__item {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.callback-btn {
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    border: 2px #66C05D solid;
+    width: 170px;
+    height: 40px;
+}
+
+.header__contacts {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    height: 120px;
+}
+
+
+.header__contacts_logo {
+    display: flex;
+    align-items: center;
+    margin-right: 515px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__contacts_logo-symbol {
+    margin-right: 20px;
+}
+
+
+.header__call {
+    display: flex;
+    align-items: center;
+}
+
+.phone {
+    display: flex;
+    margin-right: 40px;
+    font-size: 16px;
+}
+
+.header__last {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    height: 79px;
+    align-items: center;
+}
+
+.header__last::before {
+    position: absolute;
+    content: "";
+    background: #EFEFEF;
+    width: 100%;
+    height: 1px;
+    top: 0;
+}
+
+
+.header__menu-item {
+    font-size: 16px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.banner {
+    background-color: #66C05D;
+    width: 100%;
+    height: 604px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.banner__title {
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    margin-bottom: 50px;
+    
+}
+
+.banner__desc {
+    color: #FFFFFF;
+    line-height: 20px;
+    margin-bottom: 50px;
+}
+
+.banner__btn {
+    width: 170px;
+    height: 40px;
+    border-radius: 40px;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    background-color: transparent;
+}
+
+.banner__img {
+    position: relative;
+    margin-left: 150px;
+    z-index: 3;
+}
+
+.banner__img::after {
+    position: absolute;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 859px;
+    height: 859px;
+    border-radius: 50%;
+    top: -124px;
+    left: -111px;
+    z-index: -1;
+}
+
+.banner__img::before {
+    position: absolute;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 677px;
+    height: 677px;
+    border-radius: 50%;
+    top: -33px;
+    left: -20px;
+    z-index: -2;
+
+}
+
+
+.catalog__wrapper {
+    display: grid;
+    grid-template-columns: 255px 255px 255px 255px;
+    column-gap: 30px;
+}
+
+.catalog__title {
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+    margin-top: 80px;
+    margin-bottom: 38px;
+}
+
+.catalog-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.catalog__item {
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+    height: 363px;
+    align-items: center;
+    padding-top: 25px;
+    background-color: #FFFFFF;
+}
+
+.catalog__item-desc {
+    color: #333333;
+    line-height: 19px;
+    text-align: center;
+    margin: 20px 30px 13px; 
+    font-size: 14px;
+}
+
+.catalog__item-price {
+    color: #000000;
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.catalog__item-btn {
+    border-radius: 40px;
+    background-color: #66C05D;
+    color: #FFFFFF;
+    width: 130px;
+    height: 35px;
+    border: none;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.subscription__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.subscription__bonus {
+    background-color: #66C05D;
+    color: #FFFFFF;
+    width: 540px;
+    height: 212px;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.subscription__bonus-text {
+    margin: 35px 40px;
+}
+
+.subscription__bonus-img {
+    margin-right: 45px;
+    margin-left: 25px;
+}
+
+.bonus-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+
+.bonus-input {
+    background-color:#FFFFFF;
+    width: 225px;
+    height: 35px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 10px;
+    padding-left: 25px;
+}
+
+input::placeholder {
+    color: #C4C4C4;
+}
+
+.subscription__shops-wrapper {
+     margin: 35px 40px;
+}
+
+.subscription__shops {
+    background-color: #66C05D;
+    color: #FFFFFF;
+    width: 540px;
+    height: 212px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shops-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.shops-desc {
+    margin: 0px;
+}
+
+
+.shops-btn {
+    border-radius: 30px;
+    background-color: transparent;
+    color:#FFFFFF;
+    border: #FFFFFF solid 2px;
+    width: 170px;
+    height: 35px;
+    margin-top: 30px;
+}
+
+
+.footer__contacts-callback-btn {
+    border-radius: 40px;
+    border: 2px #66C05D solid;
+    width: 170px;
+    height: 40px;
+    background-color: transparent;
+}
+
+.footer__social-icons-list {
+    display: flex;
+    padding: 0px;
+    margin-right: 170px;
+}
+
+.footer__social-icon {
+    display: flex;
+    margin-right: 16px;
+}
+
+.social-list-link {
+    position: relative;
+}
+
+.footer__contacts {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 120px;
+    margin-top: 132px;
+}
+
+.footer__contacts-adres {
+    margin-right: 105px;
+}
+
+.footer__phone {
+    font-size: 16px;
+    margin-right: 40px;
+}
+
+.footer__signature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #828282;
+    font-size: 12px;
+    line-height: 14px;
+    height: 64px;
+}
+
+.signature-first {
+    margin-right: 240px;
+}
+
+.signature-second {
+    margin-left: 240px;
+}
