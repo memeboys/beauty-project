@@ -45,6 +45,7 @@ button:active {
 
 .service {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .service__item {
@@ -62,16 +63,24 @@ button:active {
 
 .header__contacts {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: #FFFFFF;
     height: 120px;
+    padding: 10px;
 }
-
 
 .header__contacts_logo {
     display: flex;
     align-items: center;
-    margin-right: 515px;
+
+    @media (min-width: 680px)  {
+        margin-right: 30px; 
+    }
+    
+    @media (min-width: 1200px)  {
+        margin-right: 515px; 
+    }
 }
 
 .logo {
@@ -138,6 +147,13 @@ button:active {
     overflow: hidden;
 }
 
+.banner__text {
+    margin: 26px;
+    @media (min-width: 1200px)  {
+        margin: 0px;
+    }
+}
+
 .banner__title {
     color: #FFFFFF;
     font-size: 48px;
@@ -166,6 +182,11 @@ button:active {
     position: relative;
     margin-left: 150px;
     z-index: 3;
+    display: none;
+
+    @media (min-width: 1200px)  {
+        display: block;
+    }
 }
 
 .banner__img::after {
@@ -195,24 +216,47 @@ button:active {
 
 
 .catalog__wrapper {
-    display: grid;
-    grid-template-columns: 255px 255px 255px 255px;
-    column-gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 660px)  {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    @media (min-width: 1200px)  {
+        display: grid;
+        grid-template-columns: 255px 255px 255px 255px;
+        column-gap: 30px;
+    }
 }
 
 .catalog__title {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
     font-style: normal;
     color: #000000;
     margin-top: 80px;
     margin-bottom: 38px;
+
+    @media (min-width: 680px)  {
+        font-size: 24px;
+    }
 }
 
 .catalog-head {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+}
+
+.catalog-head svg {
+    display: none;
+    @media (min-width: 680px)  {
+        display: block;
+    }
 }
 
 .catalog__item {
@@ -253,18 +297,29 @@ button:active {
 
 .subscription__wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 100px; 
+
+    @media (min-width: 1200px)  {
+        flex-direction: row;
+    } 
 }
 
 .subscription__bonus {
     background-color: #66C05D;
     color: #FFFFFF;
-    width: 540px;
+    width: 300px;
     height: 212px;
     display: flex;
     align-items: center;
-    margin-right: 30px;
+    margin-bottom: 15px;
+
+    @media (min-width: 680px)  {
+        width: 540px;
+        margin-right: 30px;
+        margin-bottom: 0px;
+    } 
 }
 
 .subscription__bonus-text {
@@ -272,8 +327,14 @@ button:active {
 }
 
 .subscription__bonus-img {
+    display: none;
     margin-right: 45px;
     margin-left: 25px;
+
+    @media (min-width: 680px)  {
+       display: block;
+    } 
+
 }
 
 .bonus-title {
@@ -304,10 +365,15 @@ input::placeholder {
 .subscription__shops {
     background-color: #66C05D;
     color: #FFFFFF;
-    width: 540px;
+    width: 300px;
     height: 212px;
     display: flex;
     flex-direction: column;
+
+    @media (min-width: 680px)  {
+        width: 540px;
+        margin-top: 20px;
+    } 
 }
 
 .shops-title {
@@ -339,12 +405,30 @@ input::placeholder {
     width: 170px;
     height: 40px;
     background-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @media (min-width: 680px)  {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    } 
+
+    @media (min-width: 1200px)  {
+        margin-right: 50px;
+    } 
+}
+
+
+.footer__social-icons {
+    @media (min-width: 1200px)  {
+        margin-left: 50px;
+        margin-right: 180px;
+    } 
 }
 
 .footer__social-icons-list {
     display: flex;
     padding: 0px;
-    margin-right: 170px;
 }
 
 .footer__social-icon {
@@ -361,12 +445,22 @@ input::placeholder {
     justify-content: center;    
     align-items: center;
     background-color: #FFFFFF;
-    height: 120px;
-    margin-top: 132px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    flex-direction: column;
+
+    @media (min-width: 1200px)  {
+       flex-direction: row;
+       height: 120px;
+       margin-top: 132px;
+    
+    } 
 }
 
 .footer__contacts-adres {
-    margin-right: 105px;
+    @media (min-width: 1200px)  {
+    margin-right: 50px;
+    } 
 }
 
 .footer__phone {
@@ -385,9 +479,20 @@ input::placeholder {
 }
 
 .signature-first {
-    margin-right: 240px;
+    margin-left: 20px;
+
+    @media (min-width: 680px)  {
+        margin-right: 100px;
+    } 
+    
+    @media (min-width: 1200px)  {
+        margin-right: 240px;
+    } 
 }
 
 .signature-second {
-    margin-left: 240px;
+    margin-right: 40px;
+    @media (min-width: 1200px)  {
+        margin-left: 240px;
+    } 
 }
