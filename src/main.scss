@@ -219,6 +219,7 @@ button:active {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 15px;
 
     @media (min-width: 660px)  {
         display: grid;
@@ -297,29 +298,36 @@ button:active {
 
 .subscription__wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: 100px; 
 
-    @media (min-width: 1200px)  {
-        flex-direction: row;
+    @media (max-width: 1200px)  {
+        flex-direction: column;
     } 
 }
 
 .subscription__bonus {
     background-color: #66C05D;
     color: #FFFFFF;
-    width: 300px;
+    width: 540px;
     height: 212px;
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 
-    @media (min-width: 680px)  {
-        width: 540px;
-        margin-right: 30px;
-        margin-bottom: 0px;
+    @media (max-width: 680px)  {
+        width: 300px;
+        margin-bottom: 15px;
     } 
+
+    @media (min-width: 681px) {
+        margin-bottom: 15px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-right: 30px;
+    }
 }
 
 .subscription__bonus-text {
@@ -346,7 +354,7 @@ button:active {
 
 .bonus-input {
     background-color:#FFFFFF;
-    width: 225px;
+    width: 195px;
     height: 35px;
     border-radius: 30px;
     border: none;
@@ -365,13 +373,13 @@ input::placeholder {
 .subscription__shops {
     background-color: #66C05D;
     color: #FFFFFF;
-    width: 300px;
+    width: 540px;
     height: 212px;
     display: flex;
     flex-direction: column;
 
-    @media (min-width: 680px)  {
-        width: 540px;
+    @media (max-width: 680px)  {
+        width: 300px;
         margin-top: 20px;
     } 
 }
@@ -446,7 +454,6 @@ input::placeholder {
     align-items: center;
     background-color: #FFFFFF;
     margin-top: 30px;
-    margin-bottom: 40px;
     flex-direction: column;
 
     @media (min-width: 1200px)  {
